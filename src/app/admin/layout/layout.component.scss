@@ -1,0 +1,49 @@
+.admin-container {
+  width: auto;
+  height: 615px;
+  margin: 10px;
+  border: 1px solid #555;
+  border-radius: 8px; /* Köşeleri yumuşatmak için */
+  box-shadow: 0 4px 8px rgb(0, 0, 0); /* Hafif bir gölge ekleyerek derinlik hissi vermek için */
+  background: #fff; /* Arka plan rengini beyaz yaparak daha temiz bir görünüm sağlamak için */
+  display: flex;
+  overflow: hidden; /* İçeriğin taşmasını engellemek için */
+}
+
+.admin-container .sidebar {
+  width: 180px;
+  background: #158b82; /* Yan çubuk için koyu bir renk */
+  color: #c8c8c8; /* Yazı rengini beyaz yaparak kontrast sağlamak için */
+  
+  padding: 20px;
+  box-sizing: border-box;
+}
+ 
+.admin-container .main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background: #f9f9f9; /* Ana içerik için açık bir arka plan rengi */
+  box-sizing: border-box;
+}
+
+.admin-container .sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-container .sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.admin-container .sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background 0.3s ease; /* Geçiş efekti ekleyerek daha modern bir his vermek için */
+}
+
+.admin-container .sidebar ul li a:hover {
+  background: #555; /* Üzerine gelindiğinde arka plan rengini değiştirerek etkileşim hissi vermek için */
+}
